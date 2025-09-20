@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ian Tongol</title>
+  <link rel="stylesheet" href="glass.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <header>
+    <div class="brand">
+    <div class="logo">
+        <img src="Oc bnha.jpg" alt="My Logo">
+    </div>
+    <div>
+    <div style="font-weight:700">Ian — UI/UX</div>
+    <div style="color:var(--muted);font-size:13px">UI/UX designer — 3D interfaces & visual systems</div>
+    </div>
+    </div>
+    <nav style="display:flex;gap:14px;align-items:center">
+    <a class="btn btn-ghost" href="#projects">Projects</a>
+    <a class="btn btn-ghost" href="#contact">Contact</a>
+    <a class="btn btn-primary" href="#hire">Hire me</a>
+    </nav>
+    </header>
+    
+    
+    <section class="hero">
+    <div class="me glass">
+    <h1>Crafting immersive product experiences with 3D & glassmorphism</h1>
+    <h2>Motion, depth, and typography — designed by a 2nd year student.</h2>
+    
+    
+    <p style="color:var(--muted);line-height:1.6;margin-top:18px">I combine clean information architecture with cinematic 3D assets to help products feel tangible — not just clickable. Below are interactive case studies using embedded 3D models and refined typographic systems.</p>
+    
+    
+    <div class="cta">
+    <button class="btn btn-primary">Download CV</button>
+    <a href="#projects" class="btn btn-ghost">See case studies</a>
+    <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+    
+    
+    <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+    <div style="display:flex;flex-direction:column">
+   <!--<strong style="font-size:18px">Available for</strong>
+    <span style="color:var(--muted)">Product design, 3D UI, design systems</span>-->
+    </div>
+    </div>
+    </div>
+    
+    <div class="viewer-wrap glass">
+        <div id="model-status" class="model-status" role="status" aria-live="polite"></div>
+        
+        
+        <model-viewer id="main-model"
+        src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+        alt="3D astronaut"
+        camera-controls
+        auto-rotate
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        shadow-intensity="1"
+        interaction-prompt="none"
+        crossorigin="anonymous"
+        loading="eager"></model-viewer>
+
+
+<div style="display:flex;gap:12px;margin-top:12px;justify-content:center">
+<button class="btn btn-ghost" onclick="safeSetModel('https://modelviewer.dev/shared-assets/models/Astronaut.glb')">Astronaut</button>
+<button class="btn btn-ghost" onclick="safeSetModel('https://modelviewer.dev/shared-assets/models/RobotExpressive.glb')">Robot</button>
+<button class="btn btn-ghost" onclick="safeSetModel('https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb')">Statue</button>
+</div>
+</div>
+</section>
+
+
+<section id="projects" class="projects">
+<article class="project glass">
+<div class="thumb">
+<model-viewer src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" alt="robot" camera-controls auto-rotate exposure="1" interaction-prompt="none" style="height:100%" crossorigin="anonymous" loading="eager"></model-viewer>
+</div>
+<div style="padding:8px 2px">
+<strong>Product Explorer — 3D configurator</strong>
+<div style="color:var(--muted);font-size:13px;margin-top:6px">Interactive configurator for product detail pages — realistic materials and smooth transitions.</div>
+</div>
+</article>
+
+
+<article class="project glass">
+<div class="thumb">
+<model-viewer src="https://modelviewer.dev/shared-assets/models/Cube.glb" alt="cube" camera-controls auto-rotate interaction-prompt="none" style="height:100%" crossorigin="anonymous" loading="eager"></model-viewer>
+</div>
+<div style="padding:8px 2px">
+<strong>Landing experience — 3D hero animations</strong>
+<div style="color:var(--muted);font-size:13px;margin-top:6px">A hero module that blends depth, parallax, and subtle glass overlays to increase trust & conversion.</div>
+</div>
+</article>
+
+
+<article class="project glass">
+<div class="thumb">
+<model-viewer src="https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb" alt="statue" camera-controls auto-rotate interaction-prompt="none" style="height:100%" crossorigin="anonymous" loading="eager"></model-viewer>
+</div>
+<div style="padding:8px 2px">
+<strong>Brand identity — 3D logotypes</strong>
+<div style="color:var(--muted);font-size:13px;margin-top:6px">Explorations of logotype systems in 3D for hero placements and motion intros.</div>
+</div>
+</article>
+</section>
+
+
+<!--<section id="contact">
+    <div class="glass-card contact-wrapper">
+      <h2>Get in Touch</h2>
+      <p>I’d love to hear from you. Whether it’s a project, idea, or just to say hi — drop me a message or connect through the links below.</p>
+  
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:youremail@example.com" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            Email Me
+          </a>
+          <a href="tel:+1234567890" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.1A19.51 19.51 0 013.1 12.81 19.86 19.86 0 010 4.18 2 2 0 012 2h4.09a2 2 0 012 1.72c.12.81.37 1.61.73 2.34a2 2 0 01-.45 2.18L7.1 9.1a16 16 0 006.9 6.9l.86-1.27a2 2 0 012.18-.45c.73.36 1.53.61 2.34.73a2 2 0 011.72 2z"/></svg>
+            Call Me
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.02-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.37h.04c.4-.75 1.39-1.54 2.86-1.54 3.06 0 3.62 2.01 3.62 4.63v5.54z"/></svg>
+            LinkedIn
+          </a>
+        </div>-->
+  
+       <!-- <section id="contact">
+            <div class="glass-card contact-wrapper">
+              <h2>Get in Touch</h2>
+              <p>I’d love to hear from you. Whether it’s a project, idea, or just to say hi — drop me a message or connect below.</p>
+          
+              <div class="contact-grid">
+                <div class="contact-info">
+                  <a href="mailto:youremail@example.com" class="contact-button animate-fade">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    Email Me
+                  </a>
+                  <a href="tel:+1234567890" class="contact-button animate-fade" style="animation-delay:0.2s">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 01-2.18 2 19.86 19.86 0 01-8.63-3.1A19.51 19.51 0 013.1 12.81 19.86 19.86 0 010 4.18 2 2 0 012 2h4.09a2 2 0 012 1.72c.12.81.37 1.61.73 2.34a2 2 0 01-.45 2.18L7.1 9.1a16 16 0 006.9 6.9l.86-1.27a2 2 0 012.18-.45c.73.36 1.53.61 2.34.73a2 2 0 011.72 2z"/></svg>
+                    Call Me
+                  </a>
+                  <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-button animate-fade" style="animation-delay:0.4s">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.76-1.75 1.76zm13.5 11.27h-3v-5.5c0-1.32-.02-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91v5.6h-3v-10h2.88v1.37h.04c.4-.75 1.39-1.54 2.86-1.54 3.06 0 3.62 2.01 3.62 4.63v5.54z"/></svg>
+                    LinkedIn
+                  </a>
+                </div>
+                <form class="contact-form animate-fade" style="animation-delay:0.6s">
+                  <input type="text" placeholder="Your Name" required>
+                  <input type="email" placeholder="Your Email" required>
+                  <textarea placeholder="Your Message" required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </section>-->
+          
+
+<footer>
+<div>Designed & coded by Ian • <span style="color:var(--muted)">Ian.design</span></div>
+<div>Email: iangabtong@gmail.com</div>
+</footer>
+</div>
+
+  <script src="glass.js"></script>   
+</body>
+</html>
